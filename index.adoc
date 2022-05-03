@@ -1,0 +1,127 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+---
+= 參與GitHub的NetApp技術內容
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+NetApp產品與服務的文件為開放原始碼。如此一來、您就能透過改善、修正及建議、對內容做出貢獻。您只需要一個GitHub帳戶和一個小計畫。
+
+
+
+== 總覽
+
+您可以使用下列選項來貢獻我們的文件：
+
+* 按一下*申請文件變更*以提交一般意見反應、或詢問有關內容的問題。接著、NetApp內容主管會審查您的申請、以判斷文件需要做哪些變更。這是最常見的選項。
++
+<<Request doc changes,檢視此選項的逐步指示>>。
+
+* 按一下*編輯此頁面*、即可自行直接編輯內容。NetApp內容主管接著會審查您的編輯內容、並加以合併。
++
+<<Submit edits to the docs,檢視此選項的逐步指示>>。
+
+
+
+
+
+== 申請文件變更
+
+提交文件變更申請是提供NetApp文件的最常見方法。提交申請後、內容主管將確認他們已收到您的意見反應。您會在收到GitHub的電子郵件通知後收到通知。
+
+如果內容主管同意您的建議可以讓內容更好、他們會在稍後提交變更。您將會收到另一則通知、告知您的意見已納入其中。
+
+
+TIP: 您提供的所有意見都會公開顯示。任何瀏覽GitHub repo問題的人、都能看到您的意見。
+
+.步驟
+. 如果您還沒有GitHub帳戶、 https://github.com/join["從github.com建立一個"^]。
+. 登入GitHub帳戶。
+. 使用網頁瀏覽器、開啟上的頁面 https://docs.netapp.com["docs.netapp.com"] 這與您的意見反應有關。
+. 在頁面右側、按一下*要求文件變更*。
++
+image:screenshot-request-doc-changes.png["申請文件變更"]
+
++
+新的瀏覽器索引標籤隨即開啟、其中包含一個表單、可讓您用來提供詳細資料給我們的文件團隊。
+
+. 輸入標題、然後提供申請的詳細資料。
++
+註解欄位會預先填入頁面的標題和URL。請勿刪除此資訊、因為我們需要它來瞭解您的要求。
+
++
+image:screenshot-submit-new-issue.png["提交新問題"]
+
+. 按一下*提交新問題*、為您的申請建立問題。
+
+
+開啟問題可透過GitHub意見進行協同作業。您將會根據GitHub帳戶設定中的偏好設定收到電子郵件通知。
+
+您也可以按一下GitHub搜尋方塊上方橫幅上的* Issues *來檢視申請狀態：
+
+image:screenshot-issues.png["問題索引標籤"]
+
+
+
+== 提交對文件的編輯
+
+如果您願意自行編輯內容、可以直接編輯來源檔案、提交您想要查看的確切文件變更。
+
+身為外部參與者、您將無法直接發佈變更。內容主管將審查變更、進行任何必要的編輯、然後合併變更。發生這種情況時、您會收到GitHub的電子郵件通知。
+
+如果您需要我們撰寫樣式或來源語法的協助、可以使用下列資源：
+
+* link:style.html["NetApp文件樣式指南"]
+* link:asciidoc_syntax.html["AsciDoc語法"]
+
+
+.步驟
+. 如果您還沒有GitHub帳戶、 https://github.com/join["從github.com建立一個"^]。
+. 登入GitHub帳戶。
+. 使用網頁瀏覽器、開啟上的頁面 https://docs.netapp.com["docs.netapp.com"] 您想要編輯的。
+. 在頁面右側、按一下*編輯此頁面*。
++
+image:screenshot-edit-this-page.png["編輯此頁面"]
+
+. 按一下鉛筆圖示。
++
+image:screenshot-pencil-icon.png["鉛筆圖示"]
+
+. 編輯內容。
++
+內容以輕量標記語言AsciDoc撰寫。如果您需要協助、 link:asciidoc_syntax.html["按一下此處以瞭解AsciDoc語法"]。
+
+. 若要提交變更、請向下捲動頁面並填寫表單：
++
+.. 輸入標題和選用說明。
+.. 選取*建立此提交的新分公司、然後開始提出拉出要求*。
+.. 按一下*建議變更*。
++
+GitHub會自動填入變更的分公司名稱（例如、_username-patch-n_）。
+
++
+image:screenshot-propose-change.png["提議檔案變更"]
+
+
+
+. 提供您所做編輯的相關註解、然後按一下「*建立拉出要求*」。
++
+image:screenshot-create-pull-request.png["建立拉出要求"]
+
+
+
+在您提出變更建議之後、我們將會進行審查、進行必要的編輯、然後將變更合併到GitHub儲存庫。
+
+您可以按一下GitHub搜尋方塊上方橫幅上的* Pull Requests*來檢視拉出要求的狀態：
+
+image:screenshot-view-pull-requests.png["拉出要求索引標籤"]

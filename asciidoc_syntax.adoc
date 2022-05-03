@@ -1,0 +1,538 @@
+---
+sidebar: sidebar 
+permalink: asciidoc_syntax.html 
+---
+= AsciDoc參考資料
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+AsciDoc是輕量標記語言、類似於Markdown。我們選擇AsciDoc而非標準Markdown、因為它提供更多隨裝即用功能。雖然功能更強大、但仍很簡單易用。請參閱以下各節、以開始撰寫AsciDoc。
+
+請參閱 http://asciidoctor.org/docs/user-manual/["AsciDoctor.使用手冊"^] 以取得更多協助。
+
+
+
+== 基礎知識
+
+您需要瞭解一些事項、才能提供簡單的文件更新。
+
+
+
+=== 標題
+
+....
+= Page title
+== Level 1 section
+=== Level 2 section
+==== Level 3 section
+===== Level 4 section
+....
+您只能有一個頁面標題、但可以有多個章節標題。例如、您可能有三個層級1區段、其中包括層級2和3區段：
+
+....
+= Page title
+== Level 1 section
+=== Level 2 section
+== Level 1 section
+== Level 1 section
+=== Level 2 section
+==== Level 3 section
+....
+
+
+=== 粗體文字
+
+....
+*Text*
+....
+
+
+=== 斜體文字
+
+....
+_Text_
+....
+
+
+=== 項目符號清單
+
+....
+* Item 1
++
+Continuation text for the previous list item.
+
+* Item 2
+** Item 2a
+
+* Item 3
+....
+
+TIP: +是清單的續約。它會將文字與清單項目保持內嵌。省略+會影響該行的格式設定。
+
+
+
+=== 標記清單
+
+....
+Item 1::
+Description 1
+
+Item 2::
+Description 2
+....
+或
+
+....
+[horizontal]
+Item 1::
+Description 1
+
+Item 2::
+Description 2
+....
+當您在項目1上方新增[水平]時、標籤和說明會出現在同一行。如果您有很短的說明、就能順利運作。
+
+*不含[橫式]*的範例
+
+項目1.:: 說明1.
+項目2.:: 說明2.
+
+
+*使用[橫式]*的範例
+
+項目1.:: 說明1.
+項目2.:: 說明2.
+
+
+
+
+=== 步驟
+
+....
+.Steps
+
+. Step 1
+
+. Step 2
++
+Info for step 2
+
+. Step 3
+.. Step 3a
+.. Step 3b
+
+. Step 4
+....
+
+TIP: +是清單的續約。它會將文字與清單項目保持內嵌。省略+會影響該行的格式設定。
+
+
+
+=== 映像
+
+....
+image:file.png["alt text"]
+....
+_Alttext_表示替代文字。說明頁面上顯示的影像。主要用途是使用螢幕助讀程式的視覺受損使用者。
+
+兩個注意事項：
+
+. 最好以引號括住替代文字、因為像是像是逗號這樣的符號、可能會影響將內容從AsciDoc轉換為HTML的能力。
+. 。 https://docs.asciidoctor.org/asciidoc/latest/macros/images/["AsciDoctor"^] 請說明_block images_應與_wo_分欄位於同一行：「image:file.pnpn'
++
+但我們偏好使用一個分號、如上所示。使用同一個結腸的結果相同、我們的內部工具也能更好地運作。
+
+
+
+
+
+=== 影片
+
+託管於YouTube：
+
+....
+video::id[youtube]
+....
+本機裝載於GitHub：
+
+....
+video::file.mp4
+....
+
+
+=== 連結
+
+您應該使用的語法取決於您要連結的內容：
+
+* <<Link to an external site>>
+* <<Link to a section on the same page>>
+* <<Link to another page in the docs>>
+
+
+
+
+==== 連結至外部站台
+
+....
+url[link text^]
+....
+^會在新的瀏覽器索引標籤中開啟連結。
+
+
+
+==== 連結至同一頁上的區段
+
+....
+<<section_title>>
+....
+例如：
+
+....
+For more details, see <<Headings>>.
+....
+連結文字可以是區段標題以外的內容：
+
+....
+<<section_title,Different link text>>
+....
+例如：
+
+....
+<<Headings,Learn the syntax for headings>>.
+....
+
+
+==== 連結至文件中的其他頁面
+
+檔案必須位於相同的GitHub儲存庫中：
+
+....
+link:<file_name>.html[Link text]
+....
+若要直接連結至檔案中的區段、請新增雜湊（#）和區段標題：
+
+....
+link:<file_name>.html#<section-name-using-dashes-and-all-lower-case>[Link text]
+....
+例如：
+
+....
+link:style.html#use-simple-words[Use simple words]
+....
+
+
+=== 附註、秘訣和注意事項
+
+您可能想要使用附註、秘訣或警示聲明來提醒您注意某些陳述。格式化如下：
+
+....
+NOTE: text
+
+TIP: text
+
+CAUTION: text
+....
+請謹慎使用這些工具。您不想建立充滿筆記和秘訣的頁面。如果您這麼做、就會變得更不具意義。
+
+以下是將AsciDoc內容轉換成HTML時的每個外觀：
+
+
+NOTE: 請注意。其中包含讀者可能需要知道的額外資訊。
+
+
+TIP: 秘訣提供實用資訊、可協助使用者做點什麼或瞭解一些事情。
+
+
+CAUTION: 請注意、建議讀者謹慎行事。在極少數情況下使用。
+
+
+
+== 進階內容
+
+如果您正在撰寫新內容、請檢閱本節以瞭解詳細資料。
+
+
+
+=== 文件標題
+
+每個AsciDoc檔案都包含兩種標頭類型。第一種是GitHub、第二種是AsciDoctor醫生、這是將AsciDoc內容轉換成HTML的發佈工具。
+
+GitHub標頭是.adoc檔案中第一組內容。它必須包括下列項目：
+
+....
+---
+sidebar: sidebar
+permalink: <file_name>.html
+keywords: keyword1, keyword2, keyword3, keyword4, keyword5
+summary: "A summary."
+---
+....
+關鍵字和摘要會直接影響搜尋結果。事實上、摘要本身會顯示在搜尋結果中。您應該確保使用者很友善。最佳實務做法是讓摘要反映您的主要段落。
+
+
+TIP: 最好以引號括住摘要、因為像號這樣的符號會影響將內容從AsciDoc轉換為HTML的能力。
+
+下一個標題直接位於文件標題下方（請參閱 <<Headings>>）。此標頭應包括下列項目：
+
+....
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+....
+您不需要輕觸此標題中的任何參數。只要貼上貼上即可、別忘了。
+
+
+
+=== 主要段落
+
+文件標題下的第一個段落應包含其正上方的下列語法：
+
+....
+[.lead]
+This is my lead paragraph for this content.
+....
+[.idel]會將CSS格式套用至前置段落、而前置段落的格式與後置文字的格式不同。
+
+
+
+=== 表格
+
+以下是基本表格的語法：
+
+....
+[cols=2*,options="header",cols="25,75"]
+|===
+| heading column 1
+| heading column 2
+| row 1 column 1 | row 1 column 2
+| row 2 column 1 | row 2 column 2
+|===
+....
+格式化表格的方法有多種_多種_。請參閱 https://asciidoctor.org/docs/user-manual/#tables["AsciDoctor.使用手冊"^] 以取得更多協助。
+
+
+TIP: 如果儲存格包含項目符號清單等格式化內容、最好在欄標題中新增「A」以啟用格式化。例如：[cols="2,2,4a" options="header]
+
+https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#tables["如需更多表格範例、請參閱AsciDoc語法快速參考"^]。
+
+
+
+=== 工作標題
+
+如果您要說明如何執行工作、您可以在開始執行步驟之前、先附上介紹性資訊。完成步驟之後、您可能需要說明該怎麼做。如果您這麼做、最好使用標頭來組織資訊、這樣就能進行掃描。
+
+視需要使用下列標題：
+
+_使用者完成工作所需的資訊。_
+
+_使用者可能需要知道的一些關於此工作的額外內容資訊。_
+
+_完成工作的個別步驟。_
+
+_使用者接下來該怎麼做。_
+
+其中每一項都應包括。就在文字前面、如下所示：
+
+....
+.What you'll need
+.About this task
+.Steps
+.What's next?
+....
+此語法會以較大的字型套用粗體文字。
+
+
+
+=== 命令語法
+
+提供命令輸入時、請將命令括在「」內以套用等寬字型：
+
+....
+`volume show -is-encrypted true`
+....
+如下所示：
+
+「Volume show -is加密true」
+
+如需命令輸出或命令範例、請使用下列語法：
+
+....
+----
+cluster2::> volume show -is-encrypted true
+
+Vserver  Volume  Aggregate  State  Type  Size  Available  Used
+-------  ------  ---------  -----  ----  -----  --------- ----
+vs1      vol1    aggr2     online    RW  200GB    160.0GB  20%
+----
+....
+四個破折號可讓您輸入顯示在一起的個別文字行。結果如下：
+
+[listing]
+----
+cluster2::> volume show -is-encrypted true
+
+Vserver  Volume  Aggregate  State  Type  Size  Available  Used
+-------  ------  ---------  -----  ----  -----  --------- ----
+vs1      vol1    aggr2     online    RW  200GB    160.0GB  20%
+----
+
+
+=== 可變文字
+
+在命令和命令輸出中、將變數文字括在底線中以套用斜體。
+
+....
+`vserver nfs modify -vserver _name_ -showmount enabled`
+....
+以下是該命令和變數文字的外觀：
+
+「vserver NFS modify -vserver _name_-showmount enabl用」
+
+
+NOTE: 目前程式碼語法強調顯示不支援底線。
+
+
+
+=== 程式碼語法醒目提示
+
+程式碼語法醒目提示提供以開發人員為中心的解決方案、可用來記錄最熱門的語言。
+
+*輸出範例1*
+
+[source, http]
+----
+POST https://netapp-cloud-account.auth0.com/oauth/token
+Header: Content-Type: application/json
+Body:
+{
+              "username": "<user_email>",
+              "scope": "profile",
+              "audience": "https://api.cloud.netapp.com",
+              "client_id": "UaVhOIXMWQs5i1WdDxauXe5Mqkb34NJQ",
+              "grant_type": "password",
+              "password": "<user_password>"
+}
+----
+*輸出範例2*
+
+[source, json]
+----
+[
+    {
+        "header": {
+            "requestId": "init",
+            "clientId": "init",
+            "agentId": "init"
+        },
+        "payload": {
+            "init": {}
+        },
+        "id": "5801"
+    }
+]
+----
+*支援的語言*
+
+* Bash
+* 捲髮
+* HTTPS
+* JSON
+* PowerShell
+* Puppet
+* Python
+* Y反 洗錢
+
+
+*實作*
+
+複製並貼上下列語法、然後新增支援的語言和程式碼：
+
+....
+[source,<language>]
+<code>
+....
+例如：
+
+....
+[source,curl]
+curl -s https:///v1/ \
+-H accept:application/json \
+-H "Content-type: application/json" \
+-H api-key: \
+-H secret-key: \
+-X [GET,POST,PUT,DELETE]
+....
+
+
+=== 內容重複使用
+
+如果您有一部分內容重複出現在不同頁面上、您可以輕鬆地撰寫一次內容、然後在這些頁面上重複使用。可從相同的儲存庫內和儲存庫之間重複使用。以下是運作方式。
+
+. 在儲存庫中建立名為_INincluded的資料夾
++
+https://github.com/NetAppDocs/cloud-tiering["例如、請查看雲端分層儲存庫"^]。
+
+. 在該資料夾中新增一個包含您要重複使用之內容的.adoc檔案。
++
+它可以是句子、清單、表格、一或多個區段等。不要在檔案中包含任何其他內容、例如沒有標頭或任何內容。
+
+. 現在請前往您想要重複使用該內容的檔案。
+. 如果您要重複使用_相同_ GitHub儲存庫中的內容、請在一行中使用下列語法：
++
+ include::_include/<filename>.adoc[]
++
+例如：
+
++
+ include::_include/s3regions.adoc[]
+. 如果您要重複使用_different儲存庫中的內容、請在一行中使用下列語法：
++
+ include::https://raw.githubusercontent.com/NetAppDocs/<reponame>/main/_include/<filename>.adoc[]
++
+例如：
+
++
+ include::https://raw.githubusercontent.com/NetAppDocs/cloud-tiering/main/_include/s3regions.adoc[]
+
+
+就這樣！
+
+如果您想要深入瞭解INInclude指令、 https://asciidoctor.org/docs/user-manual/#include-directive["請參閱AsciDoctor.使用手冊"^]。
+
+
+
+=== 含連結的影像
+
+您可以新增連結至影像、使其如同「按鈕」。
+
+*輸出範例*
+
+在下列螢幕快照中、「在文件中心中檢視」是包含連結的映像。
+
+image::image_with_link.gif[顯示「在文件中心中檢視」按鈕的圖片]
+
+*語法*
+
+新增映像時請使用下列語法：
+
+....
+image:<file_name>.<ext>[alt=<text>,link=<url>,window=_blank]
+....
+「window=_blank」會在新的瀏覽器索引標籤（或視窗）中開啟連結。
+
+例如：
+
+....
+image:btn-view-in-doc-center.png[alt=A button titled View in Documentation Center that links to the NetApp HCI Doc Center,link=http://docs.netapp.com/hci/index.jsp,window=_blank]
+....
