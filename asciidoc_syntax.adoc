@@ -509,30 +509,3 @@ https://github.com/NetAppDocs/cloud-tiering["例如、請查看雲端分層儲�
 就這樣！
 
 如果您想要深入瞭解INInclude指令、 https://asciidoctor.org/docs/user-manual/#include-directive["請參閱AsciDoctor.使用手冊"^]。
-
-
-
-=== 含連結的影像
-
-您可以新增連結至影像、使其如同「按鈕」。
-
-*輸出範例*
-
-在下列螢幕快照中、「在文件中心中檢視」是包含連結的映像。
-
-image::image_with_link.gif[顯示「在文件中心中檢視」按鈕的圖片]
-
-*語法*
-
-新增映像時請使用下列語法：
-
-....
-image:<file_name>.<ext>[alt=<text>,link=<url>,window=_blank]
-....
-「window=_blank」會在新的瀏覽器索引標籤（或視窗）中開啟連結。
-
-例如：
-
-....
-image:btn-view-in-doc-center.png[alt=A button titled View in Documentation Center that links to the NetApp HCI Doc Center,link=http://docs.netapp.com/hci/index.jsp,window=_blank]
-....
