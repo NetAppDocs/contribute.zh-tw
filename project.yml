@@ -15,3 +15,7 @@ sidebar:
     url: "/style.html"
   - title: AsciDoc參考資料
     url: "/asciidoc_syntax.html"
+  - title: AI產生內容的原則
+    url: "/ai-policy.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
