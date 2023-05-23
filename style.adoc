@@ -108,8 +108,8 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 大多數人都是視覺學習者。使用影片、圖表和螢幕擷取畫面來改善學習效果。視覺效果也有助於解密文字區塊。
 
 .範例
-* https://["範例1"^]
-* https://["範例2"^]
+* https://docs.netapp.com/us-en/occm/concept_accounts_aws.html["範例1"^]
+* https://docs.netapp.com/us-en/occm/task_getting_started_azure.html["範例2"^]
 
 
 另請參閱 <<圖形>>。
@@ -121,8 +121,8 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 使用標題、清單和表格來協助使用者掃描所需內容。
 
 .範例
-* https://["範例1"^]
-* https://["範例2"^]
+* https://docs.netapp.com/us-en/cloud_volumes/aws/task_activating_support_entitlement.html["範例1"^]
+* https://docs.netapp.com/us-en/cloud_volumes/aws/reference_selecting_service_level_and_quota.html["範例2"^]
 
 
 
@@ -132,8 +132,8 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 如果您要說明如何完成一系列工作、請將其全部放在一系列章節的一頁、包括概念性和參考型資訊。請勿將頁面分成多個迷你頁面、這需要按太多。同時、請勿建立冗長、令人生畏的頁面。請運用您的最佳判斷力來判斷頁面長度是否過長。
 
 .範例
-* https://["範例1"^]
-* https://["範例2"^]
+* https://docs.netapp.com/us-en/cloud_volumes/aws/task_activating_support_entitlement.html["範例1"^]
+* https://docs.netapp.com/us-en/occm/concept_ha.html["範例2"^]
 
 
 
@@ -200,9 +200,9 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 
 如需其他動詞慣例、請參閱：
 
-* https://["Microsoft Writing Style指南"^]
-* https://["芝加哥風格手冊"^]
-* https://["Merriam-Webster線上字典"^]
+* https://docs.microsoft.com/en-us/style-guide/welcome/["Microsoft Writing Style指南"^]
+* https://www.chicagomanualofstyle.org/home.html["芝加哥風格手冊"^]
+* https://www.merriam-webster.com/["Merriam-Webster線上字典"^]
 
 
 
@@ -375,9 +375,9 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 
 除非另有說明、否則請遵循下列詳細說明的語法、標點和拼字慣例：
 
-* https://["Microsoft Writing Style指南"^]
-* https://["芝加哥風格手冊"^]
-* https://["Merriam-Webster線上字典"^]
+* https://docs.microsoft.com/en-us/style-guide/welcome/["Microsoft Writing Style指南"^]
+* https://www.chicagomanualofstyle.org/home.html["芝加哥風格手冊"^]
+* https://www.merriam-webster.com/["Merriam-Webster線上字典"^]
 
 
 
@@ -494,8 +494,8 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 * 如果句子包含少於10且大於10的混合數字、請在所有數字中使用阿拉伯數字。
 * 如需其他號碼慣例、請參閱：
 +
-** https://["Microsoft Writing Style指南"^]
-** https://["芝加哥風格手冊"^]
+** https://docs.microsoft.com/en-us/style-guide/welcome/["Microsoft Writing Style指南"^]
+** https://www.chicagomanualofstyle.org/home.html["芝加哥風格手冊"^]
 
 
 
@@ -548,9 +548,9 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 * 限制使用分號和分號。
 * 除非另有說明、否則請遵循下列詳細說明的語法、標點和拼字慣例：
 +
-** https://["Microsoft Writing Style指南"^]
-** https://["芝加哥風格手冊"^]
-** https://["Merriam-Webster線上字典"^]
+** https://docs.microsoft.com/en-us/style-guide/welcome/["Microsoft Writing Style指南"^]
+** https://www.chicagomanualofstyle.org/home.html["芝加哥風格手冊"^]
+** https://www.merriam-webster.com/["Merriam-Webster線上字典"^]
 
 
 
@@ -567,9 +567,9 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 
 除非另有說明、否則請遵循下列詳細說明的語法、標點和拼字慣例：
 
-* https://["Microsoft Writing Style指南"^]
-* https://["芝加哥風格手冊"^]
-* https://["Merriam-Webster線上字典"^]
+* https://docs.microsoft.com/en-us/style-guide/welcome/["Microsoft Writing Style指南"^]
+* https://www.chicagomanualofstyle.org/home.html["芝加哥風格手冊"^]
+* https://www.merriam-webster.com/["Merriam-Webster線上字典"^]
 
 
 
@@ -594,7 +594,7 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 
 === 商標
 
-由於範本中的法律聲明已經足夠、因此我們在大部分的技術內容中並未包含商標符號。不過、我們使用時確實遵守所有使用規則 https://["NetApp商標詞彙"^]：
+由於範本中的法律聲明已經足夠、因此我們在大部分的技術內容中並未包含商標符號。不過、我們使用時確實遵守所有使用規則 https://www.netapp.com/us/legal/netapptmlist.aspx["NetApp商標詞彙"^]：
 
 * 使用商標詞彙（含或不含符號）僅做為形容詞、不得做為名詞、動詞或詞彙。
 * 請勿將商標詞彙縮寫、斷字或斜體。
