@@ -505,4 +505,12 @@
   <block id="2518fdb0845f92d5d9fe4aca9f03f286" category="list-text">所有員工、承包商及合作夥伴均應遵守此政策。重複違規可能會導致暫停撰寫權限。</block>
   <block id="ce9532327a3742b7a0020c494ee0ef96" category="list-text">所有內嵌於工作電腦上安裝之軟體的AI內容產生技術、包括Microsoft 365聯合試驗等技術、都會將您的資料傳送給裝載輔助技術的公司。請勿使用公司機密內容來提示這類技術、包括但不限於未發佈產品功能的規格。</block>
   <block id="a82c75ffafc08b7d85426b8da8626a7a" category="list-text">請勿使用公有AI技術來產生或編輯*先前未發佈的*產品、產品版本或產品功能的技術文件。</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>
