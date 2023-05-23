@@ -48,9 +48,9 @@ video::0A-xQJaDkco[youtube,width=848,height=480]
 TIP: 您提供的所有意見都會公開顯示。任何瀏覽GitHub repo問題的人、都能看到您的意見。
 
 .步驟
-. 如果您還沒有GitHub帳戶、 https://github.com/join["從github.com建立一個"^]。
+. 如果您還沒有GitHub帳戶、 https://["從github.com建立一個"^]。
 . 登入GitHub帳戶。
-. 使用網頁瀏覽器、開啟上的頁面 https://docs.netapp.com["docs.netapp.com"] 這與您的意見反應有關。
+. 使用網頁瀏覽器、開啟上的頁面 https://["docs.netapp.com"] 這與您的意見反應有關。
 . 在頁面右側、按一下*要求文件變更*。
 +
 image:screenshot-request-doc-changes.png["申請文件變更"]
@@ -90,9 +90,9 @@ image:screenshot-issues.png["問題索引標籤"]
 
 
 .步驟
-. 如果您還沒有GitHub帳戶、 https://github.com/join["從github.com建立一個"^]。
+. 如果您還沒有GitHub帳戶、 https://["從github.com建立一個"^]。
 . 登入GitHub帳戶。
-. 使用網頁瀏覽器、開啟上的頁面 https://docs.netapp.com["docs.netapp.com"] 您想要編輯的。
+. 使用網頁瀏覽器、開啟上的頁面 https://["docs.netapp.com"] 您想要編輯的。
 . 在頁面右側、按一下*編輯此頁面*。
 +
 image:screenshot-edit-this-page.png["編輯此頁面"]

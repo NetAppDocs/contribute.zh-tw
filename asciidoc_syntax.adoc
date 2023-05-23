@@ -17,7 +17,7 @@ permalink: asciidoc_syntax.html
 [role="lead"]
 AsciDoc是輕量標記語言、類似於Markdown。我們選擇AsciDoc而非標準Markdown、因為它提供更多隨裝即用功能。雖然功能更強大、但仍很簡單易用。請參閱以下各節、以開始撰寫AsciDoc。
 
-請參閱 http://asciidoctor.org/docs/user-manual/["AsciDoctor.使用手冊"^] 以取得更多協助。
+請參閱 http://["AsciDoctor.使用手冊"^] 以取得更多協助。
 
 
 
@@ -147,7 +147,7 @@ _Alttext_表示替代文字。說明頁面上顯示的影像。主要用途是�
 兩個注意事項：
 
 . 最好以引號括住替代文字、因為像是像是逗號這樣的符號、可能會影響將內容從AsciDoc轉換為HTML的能力。
-. 。 https://docs.asciidoctor.org/asciidoc/latest/macros/images/["AsciDoctor"^] 請說明_block images_應與_wo_分欄位於同一行：「image:file.pnpn'
+. 。 https://["AsciDoctor"^] 請說明_block images_應與_wo_分欄位於同一行：「image:file.pnpn'
 +
 但我們偏好使用一個分號、如上所示。使用同一個結腸的結果相同、我們的內部工具也能更好地運作。
 
@@ -319,12 +319,12 @@ This is my lead paragraph for this content.
 | row 2 column 1 | row 2 column 2
 |===
 ....
-格式化表格的方法有多種_多種_。請參閱 https://asciidoctor.org/docs/user-manual/#tables["AsciDoctor.使用手冊"^] 以取得更多協助。
+格式化表格的方法有多種_多種_。請參閱 https://["AsciDoctor.使用手冊"^] 以取得更多協助。
 
 
 TIP: 如果儲存格包含項目符號清單等格式化內容、最好在欄標題中新增「A」以啟用格式化。例如：[cols="2,2,4a" options="header]
 
-https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#tables["如需更多表格範例、請參閱AsciDoc語法快速參考"^]。
+https://["如需更多表格範例、請參閱AsciDoc語法快速參考"^]。
 
 
 
@@ -485,7 +485,7 @@ curl -s https:///v1/ \
 
 . 在儲存庫中建立名為_INincluded的資料夾
 +
-https://github.com/NetAppDocs/cloud-tiering["例如、請查看雲端分層儲存庫"^]。
+https://["例如、請查看雲端分層儲存庫"^]。
 
 . 在該資料夾中新增一個包含您要重複使用之內容的.adoc檔案。
 +
@@ -512,4 +512,4 @@ https://github.com/NetAppDocs/cloud-tiering["例如、請查看雲端分層儲�
 
 就這樣！
 
-如果您想要深入瞭解INInclude指令、 https://asciidoctor.org/docs/user-manual/#include-directive["請參閱AsciDoctor.使用手冊"^]。
+如果您想要深入瞭解INInclude指令、 https://["請參閱AsciDoctor.使用手冊"^]。
