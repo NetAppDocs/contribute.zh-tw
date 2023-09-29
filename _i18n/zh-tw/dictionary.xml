@@ -17,7 +17,6 @@
   <block id="f8bf3ad3550f95af891e242fcfff7b8a" category="inline-link">docs.netapp.com</block>
   <block id="8a4e27c18032ec0b6639a19d635d31e4" category="list-text">使用網頁瀏覽器、開啟上的頁面<block ref="09765d13a2c7e990410fb33027d9cebd" category="inline-link-rx"></block> 這與您的意見反應有關。</block>
   <block id="58d1e1d3dad3ec015e2540b3713ef488" category="paragraph"><block ref="58d1e1d3dad3ec015e2540b3713ef488" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="da894d315c3a28edc86e627db54669ca" category="paragraph">新的瀏覽器索引標籤隨即開啟、其中包含一個表單、可讓您用來提供詳細資料給我們的文件團隊。</block>
   <block id="f6e56229ccb769a21a8ee36c8ce1097b" category="inline-image-macro">提交新問題</block>
   <block id="947e4b9915f7e5c398e8dbce136bcf89" category="paragraph"><block ref="947e4b9915f7e5c398e8dbce136bcf89" category="inline-image-macro-rx" type="image"></block></block>
   <block id="95aee4fc901facb0b53ed386f6ba53da" category="paragraph">開啟問題可透過GitHub意見進行協同作業。您將會根據GitHub帳戶設定中的偏好設定收到電子郵件通知。</block>
@@ -443,7 +442,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="97dd767bd76bea2996ce155f6fded935" category="list-text">選取 * 要求文件變更 * 以提交一般意見反應、或是詢問有關內容的問題。接著、NetApp內容主管會審查您的申請、以判斷文件需要做哪些變更。這是最常見的選項。</block>
   <block id="52b3d02fd2caf09c367f6a8e47835fc2" category="list-text">選擇 * 編輯此頁面 * 可直接自行編輯內容。NetApp內容主管接著會審查您的編輯內容、並加以合併。</block>
-  <block id="c9dfb8a3cf2c4d02f86adae4807900dc" category="paragraph">下列影片提供這兩個選項的簡短概觀：</block>
   <block id="3cafc4d2380a4f8525dcaa0a65259e21" category="video-title">docs.netapp.com 的貢獻總覽</block>
   <block id="626ac697ef02a0c6709fb546054d122b" category="paragraph">以下各節提供逐步說明。</block>
   <block id="07c96edbc201979283e816b9981511ba" category="list-text">如果您還沒有GitHub帳戶、<block ref="23432af0d50ca18ea33f0fbce4450214" category="inline-link-rx"></block></block>
@@ -513,4 +511,7 @@
   <block id="bd62ac2d873965d23f9623cfb0176399" category="paragraph">避免記錄到需要命名UI元素的精細度層級。請仰賴介面來引導使用者瞭解互動的細節。如果您必須取得該特定項目、請在元素上命名該標籤。例如、「選擇所需的 Volume 」或「選擇「使用現有的 Volume 」。 無需命名功能表或選項按鈕或核取方塊、只要使用標籤即可。</block>
   <block id="bf9c7e854a6c302d5349d2128c75933d" category="paragraph">如需使用者必須選取的圖示、請使用圖示的影像。請勿嘗試命名。此規則適用於箭頭、鉛筆、齒輪、kabob、漢堡、 等等。</block>
   <block id="3d053f543ceb20e8d9a54ccac1275a6f" category="paragraph">偶爾會出現螢幕擷取畫面（以下稱「螢幕擷取畫面」）、有助於使用者在工作流程期間啟動或變更介面時、確信介面位置正確。請勿使用螢幕擷取畫面來顯示要輸入的資料或要選擇的值。</block>
+  <block id="aa475deb1febd97e43051f4cd6e0e03c" category="paragraph">下列影片提供這兩個選項的簡短概觀。</block>
+  <block id="d2a6bdb03847dd26c195e27066ccdb58" category="paragraph">新的瀏覽器索引標籤隨即開啟、其中含有 GitHub 表單、您可以使用此表單來提供文件團隊的詳細資料。</block>
+  <block id="60a186f1a1bf3949fd214cb8c41bc66f" category="paragraph">隨即開啟新的瀏覽器索引標籤、並將您帶到 GitHub 儲存庫中的文件、以供文件網站使用。</block>
 </blocks>
