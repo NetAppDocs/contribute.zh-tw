@@ -423,7 +423,6 @@
   <block id="e29016dcbdfa079e649a759e6f2c7d73" category="paragraph">我們期望所有的NetAppDocs貢獻者都遵守下列原則：</block>
   <block id="3d2f76e77fa66405170b95a4e6d0f881" category="paragraph">NetApp文件參與者應謹記下列事項：</block>
   <block id="3c00452e7eb4795d729c810a473fcbc2" category="list-text">新技術文件的版權必須保留在NetApp內部、不得在正式產品發表日期之前與NetApp外部的認可機構分享、以及相關技術文件的相關出版。</block>
-  <block id="18505b4ed014b3cae05d2642d6a750e6" category="list-text">請勿將機密文件、新內容或2021年後撰寫的任何內容（包括URL）傳送至AI（交談GPT或任何其他工具）。任何輸入到乍特格特的資訊都會成為其訓練資料集的一部分、而這項資料又成為OpenAI的財產、可供他們及其使用者使用。雖然大部分的資料都是可公開存取的、但我們不想使用自己的IP來訓練模型。</block>
   <block id="e7f17e2b8d75868f6d36f8f96798dd35" category="doc">禁止在NetApp技術文件中使用AI產生內容的原則</block>
   <block id="a324d52fee121cff0e9755f81464427a" category="sidebar">AI產生內容的原則</block>
   <block id="dd422ba3c99d889e5d57d1570abcaacc" category="paragraph">在NetApp、我們重視員工、承包商和合作夥伴在為客戶建立、發佈及維護準確、相關且實用的技術文件方面的專業知識。我們相信、使用AI產生的內容可能會損害這些價值、並破壞我們文件的完整性和準確度。因此、NetApp的政策是禁止發佈未經人類驗證與驗證的AI產生內容。這適用於docs.netapp.com上發佈的所有技術文件。請注意、本政策與NetApp禁止使用語言模式來撰寫其銷售產品程式碼的政策相似、並將其延伸至其他領域。</block>
@@ -514,4 +513,5 @@
   <block id="aa475deb1febd97e43051f4cd6e0e03c" category="paragraph">下列影片提供這兩個選項的簡短概觀。</block>
   <block id="d2a6bdb03847dd26c195e27066ccdb58" category="paragraph">新的瀏覽器索引標籤隨即開啟、其中含有 GitHub 表單、您可以使用此表單來提供文件團隊的詳細資料。</block>
   <block id="60a186f1a1bf3949fd214cb8c41bc66f" category="paragraph">隨即開啟新的瀏覽器索引標籤、並將您帶到 GitHub 儲存庫中的文件、以供文件網站使用。</block>
+  <block id="864a308d9063db9563fd2862dc533628" category="list-text">請勿將機密文件或新寫入的內容傳送至 AI （ ChatGPT 或任何其他工具）。任何輸入到乍特格特的資訊都會成為其訓練資料集的一部分、而這項資料又成為OpenAI的財產、可供他們及其使用者使用。雖然大部分的資料都是可公開存取的、但我們不想使用自己的IP來訓練模型。</block>
 </blocks>
