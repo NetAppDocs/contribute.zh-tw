@@ -175,9 +175,7 @@
   <block id="3f347890f95ef75c2eacb4f01c622ac9" category="cell">我們來吧</block>
   <block id="db8b923a9180129ba0052fbcd986f8b9" category="cell">沒有</block>
   <block id="59a7709f7ee8c9dadf75615cbe4a79cf" category="cell">不會</block>
-  <block id="3c2bb9e95fa5b8a7d4e0a0d41ad5b86f" category="cell">不會（如果未來需要緊張）</block>
   <block id="5970929a425637241abb7a44591e32b3" category="cell">別這麼做</block>
-  <block id="a4b1e16e36a349a9247d2137cac483f8" category="cell">您將會（如果需要未來的緊張局勢）</block>
   <block id="fa4dcd229606d27eb80b780e6fb39231" category="list-text">請勿使用這類難以理解和翻譯的合約：</block>
   <block id="ab3eb88106f999d04a740ab008a0767b" category="section-title">確保（與「確認」或「驗證」相比）</block>
   <block id="164762d67b4e5fe97d86d9a9f282ea25" category="list-text">使用「確保」表示「確保」。 請視需要加入「這一點」：「確保圖例周圍有足夠的空白空間。」</block>
@@ -487,7 +485,6 @@
   <block id="e298d7e5e24682a3c8bdbb35a4fe032b" category="list-text">在您撰寫的頁面中保持一致。</block>
   <block id="5759b7c5715d057d5710c3f672f2fa6b" category="cell">不是</block>
   <block id="56de9219979795654f00a462f479b92d" category="cell">您是</block>
-  <block id="284097c621ee43e2ed3a2212d29102f5" category="cell">我們會（如果需要未來的緊張局勢）</block>
   <block id="d90e297e46a1967fdcc50b1b348bfb6d" category="cell">會的</block>
   <block id="80d265e5e803c6d25656a0342dfe9058" category="cell">應該有</block>
   <block id="0eab61dbc3e8ad63324f3382baf86ac7" category="cell">不會</block>
@@ -514,4 +511,9 @@
   <block id="d2a6bdb03847dd26c195e27066ccdb58" category="paragraph">新的瀏覽器索引標籤隨即開啟、其中含有 GitHub 表單、您可以使用此表單來提供文件團隊的詳細資料。</block>
   <block id="60a186f1a1bf3949fd214cb8c41bc66f" category="paragraph">隨即開啟新的瀏覽器索引標籤、並將您帶到 GitHub 儲存庫中的文件、以供文件網站使用。</block>
   <block id="864a308d9063db9563fd2862dc533628" category="list-text">請勿將機密文件或新寫入的內容傳送至 AI （ ChatGPT 或任何其他工具）。任何輸入到乍特格特的資訊都會成為其訓練資料集的一部分、而這項資料又成為OpenAI的財產、可供他們及其使用者使用。雖然大部分的資料都是可公開存取的、但我們不想使用自己的IP來訓練模型。</block>
+  <block id="733e053a02d21c4877d499d0fbb4c11d" category="list-text">無法</block>
+  <block id="19aac40a7d990d8b8aa21091fd07466d" category="list-title">在未來需要緊張時、請勿使用這些宮縮：</block>
+  <block id="fc8b507a72b6956dbc043bfe0002b248" category="list-text">我們會</block>
+  <block id="b7a61cf5d29e4ad809c301c74229b078" category="list-text">不會</block>
+  <block id="fa6c9d5de251d2da13b9f81db8da0ca6" category="list-text">您會</block>
 </blocks>

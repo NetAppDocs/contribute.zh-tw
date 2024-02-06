@@ -3,15 +3,12 @@ sidebar: sidebar
 permalink: asciidoc_syntax.html 
 ---
 = AsciDoc參考資料
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
