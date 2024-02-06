@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>NetApp文件樣式指南</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="NetApp文件樣式指南" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/contribute/style.html" />
+	<meta property="og:description" content="" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/contribute/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
+  <meta name="keywords" content=" "><!-- Icons -->
+  <link rel="icon" href="/zh-tw/contribute/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/contribute/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-tw/contribute/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/contribute/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-tw/contribute/style.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/contribute/style.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/contribute/style.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/contribute/style.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/contribute/style.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/contribute/style.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/contribute/style.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/contribute/style.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/contribute/style.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/contribute/style.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/contribute/style.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/contribute/js/na-search.js'></script><script src='/zh-tw/contribute/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-tw/contribute/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/contribute/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/contribute/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/contribute/js/jszip.min.js'></script><script src='/zh-tw/contribute/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-tw/contribute/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/tw">
+                <image id="ie-header-logo" src="/zh-tw/contribute/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文件</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-tw/contribute/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">繁體中文</span>
+                    <img src="/zh-tw/contribute/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/contribute/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-tw/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/contribute/style.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-tw/contribute/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">所有 NetApp</span>
+                    <img src="/zh-tw/contribute/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/contribute/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支援</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知識庫</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">訓練</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-tw/contribute/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-tw/contribute/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文件</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-tw/contribute/">-->
+      Contributor's Guide
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-tw/contribute/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-tw/contribute/search.html" 
+        data-type="widget"
+        data-placeholder="搜尋說明文件"
+        data-no-results-found="找不到 {query} 的結果"
+        data-did-you-mean="搜尋 {suggestion}。"
+        data-no-results-found-did-you-mean="找不到 {query} 的結果。您的意思是 {suggestion} 嗎？"
+        data-results-found="找到 {hitCount} 個結果"
+        data-error-message="發生錯誤。請再試一次。"
+        data-error-reset="重設搜尋"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="發表內容"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/style.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/contribute/index.html">
+        發表內容
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="適用於NetApp文件的風格"
+      data-li-level="1#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/style.html" 
+      dale-entry-url="/style.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/contribute/style.html">
+        適用於NetApp文件的風格
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AsciDoc參考資料"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/style.html" 
+      dale-entry-url="/asciidoc_syntax.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/contribute/asciidoc_syntax.html">
+        AsciDoc參考資料
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AI產生內容的原則"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/style.html" 
+      dale-entry-url="/ai-policy.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/contribute/ai-policy.html">
+        AI產生內容的原則
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律聲明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/style.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/contribute/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-tw/contribute"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-tw/contribute"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-tw/contribute/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">NetApp文件樣式指南</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-02-06 15:18:32 +0000">02/06/2024</time>
+        
+    
+    
+        <span>貢獻者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-tw/contribute/images/discuss-sm.svg" alt="" class="github-icon" />建議變更</span>
+        <img src="/zh-tw/contribute/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-tw/contribute/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/contribute.zh-tw/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-tw/contribute/style.html&page-title=NetApp文件樣式指南" class="page-nav-contribute-link" role="button">請求文件變更</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/contribute/blob/main/style.adoc" class="page-nav-contribute-link" role="button">編輯本頁</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link" style="visibility: hidden;" >瞭解如何貢獻</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-tw/contribute/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-tw/contribute/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-tw/contribute/pdfs/fullsite-sidebar/參與GitHub的NetApp技術內容.pdf" >
+                    <img src="/zh-tw/contribute/images/pdf-icon.png" alt="" width="16" height="16"/>此文件 PDF 的網站</a>
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-tw/contribute/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>個別的 PDF 文件集合<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>我們的風格是對話式且具同理心的、但我們仍保持專業水準並達到目標。撰寫NetApp文件內容時、請遵循下列準則。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="以對話方式撰寫">以對話方式撰寫</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在向專業同仁解釋內容時、請像您說話一樣寫下。以對話的方式撰寫文章、有助於與觀眾建立連結。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/contribute/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+大聲讀出您的書面記錄。美國小說家和作家Elmore Leonard說：「如果聽起來像是寫字、我就重新寫字。」
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">太正式</th>
+<th class="tableblock halign-left valign-top">太隨意了</th>
+<th class="tableblock halign-left valign-top">我們的風格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果您遇到雲端分層問題、可以在叢集儀表板上檢視健全狀況狀態、以判斷錯誤發生的原因。健全狀況反映ONTAP 出功能不全系統和服務連接器的狀態。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">當發生故障時、這並不有趣。不過別擔心、只要查看叢集儀表板即可瞭解發生了什麼事、以及受到了哪些影響。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">發生故障時、 Cloud Tiering 會在叢集儀表板上顯示「故障」健全狀況狀態。檢視狀態以取得有關故障的資訊。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">您可以透過多種方式支付雲端分層費用。您可以透過隨用隨付訂閱來支付雲端分層費用、也可以透過ONTAP 分層授權付費、或是同時使用兩者來付費。您無法從Cloud Manager取得授權、必須直接前往Cloud Tiering服務進行設定。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">我們提供三種雲端分層付款方式。當然是隨用隨付的訂閱、但也是ONTAP 一個分層授權、甚至是兩者的組合。但您無法從 Cloud Manager 取得授權、因此請直接前往 Cloud Tiering 服務進行設定。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">透過隨用隨付訂閱、ONTAP 資訊分層授權或兩者的組合、支付雲端分層的費用。Cloud Manager 無法提供授權、但您可以直接前往雲端分層服務進行設定。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">您必須ONTAP 先從Cloud Manager探索您的叢集、才能配置儲存設備。探索完成後、您必須開啟工作環境以配置儲存設備。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">您只需要先ONTAP 從Cloud Manager探索您的叢集、然後開啟工作環境、開始配置儲存設備。簡單易用！</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">從ONTAP Cloud Manager探索完您的叢集後、請開啟工作環境以配置儲存設備。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">根據您要分析的內容、以兩種方式之一分析儲存系統的健全狀況屬性：選取儀表板上的健全狀況屬性小工具、或選取「檢視全部」以檢視健全狀況屬性的完整清單。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">您有兩種方法可以分析系統的健全狀況屬性：只要選取儀表板上的健全狀況屬性小工具即可。或者、如果您想在單一檢視中查看完整的健康屬性清單、請選取「檢視全部」。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選取儀表板上的健全屬性小工具、或選取「檢視全部」以檢視所有行動和風險的清單。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">啟動設定精靈時、請依照精靈中的指示設定節點、並將其加入叢集。下列步驟將逐步引導您完成精靈中的步驟。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此時會出現設定精靈（幾乎像魔術一樣）、引導您完成設定節點並將其加入叢集的簡單程序。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">依照設定精靈中的指示設定節點、並將其加入叢集。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">您可以從多種內容格式類型中進行選擇、以安裝及設定新系統。每種格式類型都提供完整的指示。選擇最符合學習方式的格式類型。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">您要如何設定及安裝系統？我們提供多種內容格式類型的指示、但只有您知道自己喜歡學習的方式。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選擇內容格式類型、引導您完成系統的安裝與設定。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="簡單寫入">簡單寫入</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>避免使用大字詞和令人混淆的字詞。保持簡單。您正在向專業同仁說明一些內容、而非顯示您的詞彙。</p>
+</div>
+<div class="paragraph">
+<p><strong>而非此</strong>：「將使用者與您的NetApp Cloud Central帳戶分離。」</p>
+</div>
+<div class="paragraph">
+<p>請執行此操作：「從您的NetApp Cloud Central帳戶移除使用者。」</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="至少寫入">至少寫入</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>簡短簡單的句子可讓內容更容易閱讀或掃描。現在可以使用較長的句子、然後再用較短的句子來追蹤。就像這樣。</p>
+</div>
+<div class="paragraph">
+<p>「Cloud Volumes ONTAP 若要在AWS系統和ONTAP 其他網路的資訊系統之間複寫資料、您必須在Amazon VPC和其他網路之間建立VPN連線、例如Azure vnet或您的公司網路。」</p>
+</div>
+<div class="paragraph">
+<p>請執行下列操作：「網路之間的資料複寫需要透過VPN連線。例如、您的Amazon VPC與公司網路之間、或AWS與Azure之間。」</p>
+</div>
+<div class="paragraph">
+<p>另請參閱 <a href="#極簡主義">極簡主義</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="主動寫入">主動寫入</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>避免被動式語音是技術寫作的標準規則、但當您想要進行對話時、請務必使用主動式語音。</p>
+</div>
+<div class="paragraph">
+<p>而不是這樣的：「在部署第一個叢集之前、必須先提供必要的權限。」</p>
+</div>
+<div class="paragraph">
+<p>請執行此操作：「在部署第一個叢集之前、請先提供必要的權限。」</p>
+</div>
+<div class="paragraph">
+<p>另請參閱 <a href="#主動式語音（相較於「被動式語音」）">[主動式語音（相較於「被動式語音」）]</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="使用內含語言">使用內含語言</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>NetApp相信其產品文件不應包含任何具差別的專屬語言。我們所用的詞彙、可以讓我們與客戶建立正面關係、或是與客戶分離。尤其是書面文字、影響比意圖更重要。</p>
+</div>
+<div class="paragraph">
+<p>當您為NetApp產品建立內容時、請避免使用可能被解讀為有損人格、具有種族色彩、存在或其他具有壓迫性的語言。請改用所有需要使用文件的人都能存取且歡迎使用的語言。例如、不要使用「主要/從屬」來取代「主要/次要」。</p>
+</div>
+<div class="paragraph">
+<p>我們知道、我們必須努力從文件和產品中移除所有非包容性的語言。我們正積極制定標準和最佳實務做法、並期望在未來以額外指引更新本節內容。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="請立即瞭解">請立即瞭解</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>先從對使用者很重要的事項開始。瞭解使用者想要做什麼、並專注於協助他們達成目標。</p>
+</div>
+<div class="paragraph">
+<p><strong>而非此</strong>：Cloud Sync 「使用即時資料加密技術、將資料從一部NFS伺服器同步到另一部NFS伺服器。如果您有嚴格的安全原則來透過網路傳輸資料、加密資料將有助於您。」</p>
+</div>
+<div class="paragraph">
+<p>請務必執行下列操作：「如果您的企業擁有嚴格的安全性原則、請使用即時資料加密功能、在不同網路的NFS伺服器之間同步資料。」</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="使用大量視覺效果">使用大量視覺效果</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>大多數人都是視覺學習者。使用影片、圖表和螢幕擷取畫面來改善學習效果。視覺效果也有助於解密文字區塊。</p>
+</div>
+<div class="ulist">
+<div class="title">範例</div>
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/occm/concept_accounts_aws.html" target="_blank" rel="noopener">"範例1"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/occm/task_getting_started_azure.html" target="_blank" rel="noopener">"範例2"</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>另請參閱 <a href="#圖形">圖形</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="建立可掃描的內容">建立可掃描的內容</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>使用標題、清單和表格來協助使用者掃描所需內容。</p>
+</div>
+<div class="ulist">
+<div class="title">範例</div>
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud_volumes/aws/task_activating_support_entitlement.html" target="_blank" rel="noopener">"範例1"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud_volumes/aws/reference_selecting_service_level_and_quota.html" target="_blank" rel="noopener">"範例2"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="專注於使用者目標或該目標的特定層面">專注於使用者目標或該目標的特定層面</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果您要說明如何完成一系列工作、請將其全部放在一系列章節的單一頁面上、包括概念性和參考型資訊。請勿將您的頁面分成幾個小頁面、這需要太多的按鍵動作。同時也不要製作冗長、令人生畏的網頁。請運用您的最佳判斷力來判斷頁面長度是否過長。</p>
+</div>
+<div class="ulist">
+<div class="title">範例</div>
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud_volumes/aws/task_activating_support_entitlement.html" target="_blank" rel="noopener">"範例1"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/occm/concept_ha.html" target="_blank" rel="noopener">"範例2"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="根據使用者的目標來組織內容">根據使用者的目標來組織內容</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>協助使用者在需要時找到所需的資訊。請依照下列方式組織內容、以儘快將其從文件中取出：</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">左側導覽的第一個項目（高層）</dt>
+<dd>
+<p>根據使用者嘗試達成的目標來整理內容。例如、開始使用或保護資料。</p>
+</dd>
+<dt class="hdlist1">導覽中的第二個項目（中階）</dt>
+<dd>
+<p>圍繞構成目標的廣泛工作來組織內容。例如、設定災難恢復或設定資料保護。</p>
+</dd>
+<dt class="hdlist1">個別頁面（詳細層級）</dt>
+<dd>
+<p>針對撰寫廣泛工作的個別工作來整理內容、每項工作都著重於單一學習或執行該廣泛工作的各個層面。例如、設定災難恢復所需的工作。</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="專為全球觀眾撰寫">專為全球觀眾撰寫</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>我們會為全球客戶和合作夥伴撰寫文章、大部分內容都是使用NENEOR機器翻譯工具或人工翻譯來翻譯。請遵循下列準則、以更清楚地撰寫內容、更容易翻譯：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>寫下簡短的句子。</p>
+</li>
+<li>
+<p>使用標準語法和標點。</p>
+</li>
+<li>
+<p>一個字只代表一個意義、一個字則代表一個意義。</p>
+</li>
+<li>
+<p>使用常見的收縮。</p>
+</li>
+<li>
+<p>使用圖形來釐清或取代文字。</p>
+</li>
+<li>
+<p>避免在圖形中內嵌文字。</p>
+</li>
+<li>
+<p>避免在字串中有三個以上的名詞。</p>
+</li>
+<li>
+<p>避免不清楚的先前者。</p>
+</li>
+<li>
+<p>避免使用行話、說詞和比喻。</p>
+</li>
+<li>
+<p>避免非技術範例。</p>
+</li>
+<li>
+<p>避免使用硬退貨和間隔。</p>
+</li>
+<li>
+<p>請勿使用幽默或諷刺。</p>
+</li>
+<li>
+<p>請勿使用歧視性內容。</p>
+</li>
+<li>
+<p>除非您是為特定人員撰寫文章、否則請勿使用有性別偏見的語言。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="a至z準則">A至Z準則</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="主動式語音相較於被動式語音">主動式語音（相較於「被動式語音」）</h3>
+<div class="paragraph">
+<p>在積極的聲音中、這句話的主旨是行動的推手：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>如果系統關機不正常、介面會顯示警告訊息。</p>
+</li>
+<li>
+<p>NetApp已收到合約。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>主動式語音可保持清晰、清晰的寫入。除非您有特定理由使用被動式語音、否則請將主動式語音和位址使用者直接當作「您」使用。</p>
+</div>
+<div class="paragraph">
+<p>被動式的行動者不清楚：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>如果系統關機不正常、則會顯示警告訊息。</p>
+</li>
+<li>
+<p>NetApp獲得合約。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>在下列情況下使用被動式語音：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>您不知道行動的執行者或執行者。</p>
+</li>
+<li>
+<p>您想要避免將行動結果的使用者歸咎於使用者。</p>
+</li>
+<li>
+<p>您無法寫下相關內容、例如一些必要資訊。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如需其他動詞慣例、請參閱：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/style-guide/welcome/" target="_blank" rel="noopener">"Microsoft Writing Style指南"</a></p>
+</li>
+<li>
+<p><a href="https://www.chicagomanualofstyle.org/home.html" target="_blank" rel="noopener">"芝加哥風格手冊"</a></p>
+</li>
+<li>
+<p><a href="https://www.merriam-webster.com/" target="_blank" rel="noopener">"Merriam-Webster線上字典"</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="讚不已">讚不已</h3>
+<div class="paragraph">
+<p>請使用下列標籤、分別識別主要內容流程的內容：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>附註</p>
+<div class="paragraph">
+<p>請使用附註來取得必須與其他文字不同的重要資訊。避免使用附註來取得使用者不需要的「好知道」資訊、以瞭解工作或完成工作。</p>
+</div>
+</li>
+<li>
+<p>秘訣</p>
+<div class="paragraph">
+<p>請謹慎使用秘訣、因為我們的原則是永遠記錄預設的最佳實務資訊。如有必要、請使用TIP來包含最佳實務資訊、協助使用者輕鬆高效地使用產品或完成步驟或工作。</p>
+</div>
+</li>
+<li>
+<p>注意</p>
+<div class="paragraph">
+<p>請務必小心、告知使用者可能造成非致命或極度危險的人員傷害的情況或程序。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="之後相對於一次">之後（相對於「一次」）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用「之後」表示時間順序：「插入電腦後再開啟電腦」。</p>
+</li>
+<li>
+<p>僅使用「一次」表示「一次」。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="此外">此外</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用「同時」表示「額外」。</p>
+</li>
+<li>
+<p>請勿使用「亦」來表示「或者」。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="和或">和/或</h3>
+<div class="paragraph">
+<p>如果有的話、請選擇更精確的詞彙。如果兩個詞彙都不比另一個詞彙更精確、請使用「和/或」。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="做為">做為</h3>
+<div class="paragraph">
+<p>請勿使用「 AS 」來表示「因為」。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="使用相對於使用或搭配">使用（相對於「使用」或「搭配」）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>當使用的實體為主旨時，請使用「by Using」：「您可以使用元件功能表將新元件新增至儲存庫。」</p>
+</li>
+<li>
+<p>您可以以「使用」或「使用」開頭一句話、有時產品名稱可以接受：「SnapDrive 使用VMware、您可以在Windows環境中管理虛擬磁碟和Snapshot複本。」</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="can相對於可能可能應該或必須">CAN（相對於「可能」、「可能」、「應該」或「必須」）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用「CAN」來表示功能：「您可以在此程序中隨時提交變更。」</p>
+</li>
+<li>
+<p>使用「可能」表示可能：「下載多個程式可能會影響處理時間。」</p>
+</li>
+<li>
+<p>請勿使用「可能」、這是含糊不清的、因為這可能表示能力或權限。</p>
+</li>
+<li>
+<p>使用「應該」指出建議但可選的行動。請考慮改用替代詞彙、例如「我們建議」。</p>
+</li>
+<li>
+<p>避免使用「必須」、因為它是被動的。請考慮使用必要的聲音、將思考重述為指示。如果您確實使用「必須」、請使用它來表示必要的行動或條件。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="資本化">資本化</h3>
+<div class="paragraph">
+<p>幾乎所有內容都使用句子樣式的大寫（小寫）。僅資本：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>第一個句子和標題字、包括表格標題</p>
+</li>
+<li>
+<p>清單項目的第一字、包括句子片段</p>
+</li>
+<li>
+<p>適當的名詞</p>
+</li>
+<li>
+<p>文件標題和字幕（將所有主要字詞和五個以上字母的前置詞大寫）</p>
+</li>
+<li>
+<p>UI元素、但必須在介面中大寫。否則、請使用小寫字母。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="注意注意事項">注意注意事項</h3>
+<div class="paragraph">
+<p>請務必小心、告知使用者可能造成非致命或極度危險的人員傷害的情況或程序。</p>
+</div>
+<div class="paragraph">
+<p>請參閱 <a href="#讚不已">讚不已</a> 用於識別內容與主要內容流程分開的其他標籤。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="一致性">一致性</h3>
+<div class="paragraph">
+<p>「在您向專業同仁解釋某事時、請像您說話一樣寫字」、這表示每個人都有不同之處。我們的專業對話風格有助於讓我們與使用者建立連結、並增加多位作者之間的細微不一致的頻率：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>專注於讓內容清楚且易於使用。如果所有內容都清楚且易於使用、則細微的不一致性並不重要。</p>
+</li>
+<li>
+<p>在您撰寫的頁面中保持一致。</p>
+</li>
+<li>
+<p>請務必遵循中的準則 <a href="#專為全球觀眾撰寫">專為全球觀眾撰寫</a>。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="合約">合約</h3>
+<div class="paragraph">
+<p>合約強化對話的基調、許多合約都易於理解和翻譯。</p>
+</div>
+<div class="ulist">
+<div class="title">請務必使用這些容易理解和翻譯的合約：</div>
+<ul>
+<li>
+<p>不是</p>
+</li>
+<li>
+<p>無法</p>
+</li>
+<li>
+<p>沒有</p>
+</li>
+<li>
+<p>不會</p>
+</li>
+<li>
+<p>別這麼做</p>
+</li>
+<li>
+<p>不是</p>
+</li>
+<li>
+<p>就是這樣</p>
+</li>
+<li>
+<p>我們來吧</p>
+</li>
+<li>
+<p>不是</p>
+</li>
+<li>
+<p>我們就是</p>
+</li>
+<li>
+<p>不是</p>
+</li>
+<li>
+<p>您是</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">在未來需要緊張時、請勿使用這些宮縮：</div>
+<ul>
+<li>
+<p>我們會</p>
+</li>
+<li>
+<p>不會</p>
+</li>
+<li>
+<p>您會</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">請勿使用這類難以理解和翻譯的合約：</div>
+<ul>
+<li>
+<p>可能有</p>
+</li>
+<li>
+<p>別無他法</p>
+</li>
+<li>
+<p>應該有</p>
+</li>
+<li>
+<p>不該這麼做</p>
+</li>
+<li>
+<p>會的</p>
+</li>
+<li>
+<p>不會</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="確保與確認或驗證相比">確保（與「確認」或「驗證」相比）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用「確保」表示「確保」。 請視需要加入「這一點」：「確保圖例周圍有足夠的空白空間。」</p>
+</li>
+<li>
+<p>切勿使用「確保」來暗示承諾或保證：「使用Cloud Manager確保您可以在ONTAP 叢集上配置NFS和CIFS磁碟區。」</p>
+</li>
+<li>
+<p>當您表示使用者應該重複檢查已經存在或已經發生的項目時，請使用「確認」或「驗證」：「驗證叢集上是否已設定NFS。」</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="圖形">圖形</h3>
+<div class="paragraph">
+<p>持續評估內容是否有機會包含實用的圖例、圖表、流程圖、螢幕擷取或其他視覺參考資料。圖形通常比文字更清楚地傳達複雜的概念和步驟。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>請附上說明、說明該如何傳達：「下圖顯示背面板上的AC電源供應器LED。</p>
+</li>
+<li>
+<p>請將圖示的位置稱為「追蹤」或「之前」、而非「上方」或「下方」。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="語法">語法</h3>
+<div class="paragraph">
+<p>除非另有說明、否則請遵循下列詳細說明的語法、標點和拼字慣例：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/style-guide/welcome/" target="_blank" rel="noopener">"Microsoft Writing Style指南"</a></p>
+</li>
+<li>
+<p><a href="https://www.chicagomanualofstyle.org/home.html" target="_blank" rel="noopener">"芝加哥風格手冊"</a></p>
+</li>
+<li>
+<p><a href="https://www.merriam-webster.com/" target="_blank" rel="noopener">"Merriam-Webster線上字典"</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="如果沒有">如果沒有</h3>
+<div class="paragraph">
+<p>請勿自行使用「如果沒有」來指前一句：</p>
+</div>
+<div class="paragraph">
+<p>「電腦應該關機、如果沒有、請將其關閉。」</p>
+</div>
+<div class="paragraph">
+<p>請執行下列操作：「確認電腦已關閉。」</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="如果相對於是或何時">如果（相對於「是」或「何時」）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用「IF」表示條件、例如「IF」、「IF」、「IF」結構。</p>
+</li>
+<li>
+<p>如果有明示或暗示的「或不」條件、請使用「是」。為了簡化翻譯、最好將「無論是否」取代為「是否」。</p>
+</li>
+<li>
+<p>使用「時間」表示時間已過。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="必要的聲音">必要的聲音</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>針對使用者動作清單、使用必要的語音命令來執行步驟、指令、要求和標題：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>「在「工作環境」頁面上、按一下「激發需求」、然後選取ONTAP 「叢集」。</p>
+</li>
+<li>
+<p>「旋轉CAM握把、使其與電源供應器齊平。」</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>考慮使用必要的語音來取代被動式語音：</p>
+<div class="paragraph">
+<p>而不是這樣的：「在部署第一個叢集之前、必須先提供必要的權限。」</p>
+</div>
+<div class="paragraph">
+<p>請執行此操作：「在部署第一個叢集之前、請先提供必要的權限。」</p>
+</div>
+</li>
+<li>
+<p>避免使用必要的語音功能、將步驟內嵌在概念和參考資訊中。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ip和ipv6位址">IP和IPv6位址</h3>
+<div class="paragraph">
+<p>對於範例中的 IP 位址（包括 IPv6 ）、可以安全地包含以「 10.x 」開頭的任何位址。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="未來功能或版本">未來功能或版本</h3>
+<div class="paragraph">
+<p>請勿提及即將推出的產品版本或功能的時間或內容、只能說某項功能或功能「目前不受支援」。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="知識庫文章參考">知識庫文章：參考</h3>
+<div class="paragraph">
+<p>如有需要、請參閱內容中的KB（NetApp知識庫）文章。如需資源頁面和GitHub內容、請將連結放入執行中文字。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="清單">清單</h3>
+<div class="paragraph">
+<p>資訊清單通常比文字區塊更容易掃描和吸收。請考慮以清單形式呈現複雜資訊、以簡化複雜資訊的方法。以下是一些一般準則、但請運用您的判斷力：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>請確定清單的原因清楚明確。介紹完整句子、含分號的句子片段或標題的清單。</p>
+</li>
+<li>
+<p>清單應包含兩到七個項目。一般而言、每個項目中的資訊越短、您可以新增的項目越多、但清單仍可掃描。</p>
+</li>
+<li>
+<p>清單項目應盡可能掃描。避免讓清單項目無法掃描的文字區塊。</p>
+</li>
+<li>
+<p>清單項目應以大寫字母開頭、且清單項目應以等量方式平行。例如、使用名詞或動詞來啟動每個項目：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>如果所有清單項目都是完整的句子、請以句點結束。</p>
+</li>
+<li>
+<p>如果所有清單項目都是句子片段、請勿以句點結束。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>清單項目應以邏輯方式排序、例如字母順序或時間順序。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="本地化">本地化</h3>
+<div class="paragraph">
+<p>請參閱 <a href="#專為全球觀眾撰寫">專為全球觀眾撰寫</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="極簡主義">極簡主義</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用者目前是否需要此內容？</p>
+</li>
+<li>
+<p>我可以用較少的字詞來呈現內容、而不會發出太正式或太隨意的聲音嗎？</p>
+</li>
+<li>
+<p>我可以縮短或簡化一句長句、或將其分成兩句以上嗎？</p>
+</li>
+<li>
+<p>我可以使用清單來讓內容更具掃描能力嗎？</p>
+</li>
+<li>
+<p>我可以使用圖形來補充或取代文字區塊嗎？</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="附註資訊">附註資訊</h3>
+<div class="paragraph">
+<p>請使用附註來取得必須與其他文字不同的重要資訊。避免使用附註來取得使用者不需要的「好知道」資訊、以瞭解工作或完成工作。</p>
+</div>
+<div class="paragraph">
+<p>請參閱 <a href="#讚不已">讚不已</a> 用於識別內容與主要內容流程分開的其他標籤。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="數字">數字</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>10和10以上的所有數字都使用阿拉伯數字、但以下情況除外：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>如果您以數字開頭句子、請使用字詞、而非阿拉伯數字。</p>
+</li>
+<li>
+<p>請使用字數（非數字）作為大約數字。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>請使用少於10的數字。</p>
+</li>
+<li>
+<p>如果句子包含少於10且大於10的混合數字、請在所有數字中使用阿拉伯數字。</p>
+</li>
+<li>
+<p>如需其他號碼慣例、請參閱：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/style-guide/welcome/" target="_blank" rel="noopener">"Microsoft Writing Style指南"</a></p>
+</li>
+<li>
+<p><a href="https://www.chicagomanualofstyle.org/home.html" target="_blank" rel="noopener">"芝加哥風格手冊"</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="複利">複利</h3>
+<div class="paragraph">
+<p>我們會記錄NetApp產品、以及NetApp產品與協力廠商產品之間的互動。我們不會記錄協力廠商產品。我們不應將第三方內容複製並貼到文件中、也絕不應這麼做。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="先決條件">先決條件</h3>
+<div class="paragraph">
+<p>必要條件可識別必須存在的條件、或使用者在開始目前工作之前必須完成的動作。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>使用標題識別內容的性質，例如「先決條件」、「開始之前」或「開始之前」。</p>
+</li>
+<li>
+<p>如果有必要的話、請使用被動式語音做為必備字詞：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>「必須在叢集上設定NFS或CIFS。」</p>
+</li>
+<li>
+<p>「您必須擁有叢集管理IP位址和管理員使用者帳戶密碼、才能將叢集新增至Cloud Manager。」</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>根據需要闡明先決條件：「必須在叢集上設定NFS或CIFS。您可以使用System Manager或CLI來設定NFS和CIFS。」</p>
+</li>
+<li>
+<p>請考慮其他提供資訊的方法、例如是否應該將內容重新定位為目前工作的第一步：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>先決條件：「您必須擁有必要的權限才能部署第一個叢集。」</p>
+</li>
+<li>
+<p>步驟：「提供部署第一個叢集所需的權限。」</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="先前版本相對於之前上一或之前">先前版本（相對於「之前」、「上一」或「之前」）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>如有可能、請將「先前」取代為「之前」。</p>
+</li>
+<li>
+<p>如果您無法使用「之前」、請使用「之前」做為形容詞、來指的是之前發生的事情、或是重要性較高的順序。</p>
+</li>
+<li>
+<p>使用「上一步」來指出之前未指定時間發生的情況。</p>
+</li>
+<li>
+<p>使用「上一項」來指出之前發生的事情。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="標點符號">標點符號</h3>
+<div class="paragraph">
+<p>保持簡單。一般而言、句子中包含的符號越多、所需的大腦細胞就越多。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在三個或更多項目的敘述清單中的結合（「and」（和）或「or」（或））之前、使用序列號（xforxin）。</p>
+</li>
+<li>
+<p>限制使用分號和分號。</p>
+</li>
+<li>
+<p>除非另有說明、否則請遵循下列詳細說明的語法、標點和拼字慣例：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/style-guide/welcome/" target="_blank" rel="noopener">"Microsoft Writing Style指南"</a></p>
+</li>
+<li>
+<p><a href="https://www.chicagomanualofstyle.org/home.html" target="_blank" rel="noopener">"芝加哥風格手冊"</a></p>
+</li>
+<li>
+<p><a href="https://www.merriam-webster.com/" target="_blank" rel="noopener">"Merriam-Webster線上字典"</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="自">自</h3>
+<div class="paragraph">
+<p>使用「自」表示時間過長。請勿使用「自」來表示「因為」。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="拼字檢查">拼字檢查</h3>
+<div class="paragraph">
+<p>除非另有說明、否則請遵循下列詳細說明的語法、標點和拼字慣例：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/style-guide/welcome/" target="_blank" rel="noopener">"Microsoft Writing Style指南"</a></p>
+</li>
+<li>
+<p><a href="https://www.chicagomanualofstyle.org/home.html" target="_blank" rel="noopener">"芝加哥風格手冊"</a></p>
+</li>
+<li>
+<p><a href="https://www.merriam-webster.com/" target="_blank" rel="noopener">"Merriam-Webster線上字典"</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="相對於何者或何者">（相對於「何者」或「何者」）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用「that」（不含結尾的逗號）來引入句子有意義所需的子句。</p>
+</li>
+<li>
+<p>使用「that」即使句子的英文清楚、但沒有「Verify that the computer.」（確認電腦已關機。）</p>
+</li>
+<li>
+<p>使用「that」（含結尾的逗號）來引入子句、這些子句可新增支援資訊、但不需要讓句子有意義。</p>
+</li>
+<li>
+<p>使用「誰」來引入提及人員的條款。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="秘訣資訊">秘訣資訊</h3>
+<div class="paragraph">
+<p>請謹慎使用秘訣、因為我們的原則是永遠記錄預設的最佳實務資訊。如有必要、請使用TIP來包含最佳實務資訊、協助使用者輕鬆高效地使用產品或完成步驟或工作。</p>
+</div>
+<div class="paragraph">
+<p>請參閱 <a href="#讚不已">讚不已</a> 用於識別內容與主要內容流程分開的其他標籤。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="商標">商標</h3>
+<div class="paragraph">
+<p>我們的大多數技術內容中並未包含商標符號、因為範本中的法律聲明已經足夠。不過、我們使用時確實遵守所有使用規則 <a href="https://www.netapp.com/us/legal/netapptmlist.aspx" target="_blank" rel="noopener">"NetApp商標詞彙"</a>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>使用商標詞彙（含或不含符號）僅做為形容詞、不得做為名詞、動詞或詞彙。</p>
+</li>
+<li>
+<p>請勿將商標字詞縮寫、連字號或斜體。</p>
+</li>
+<li>
+<p>請勿將商標詞彙複數化。如果需要複數格式、請使用商標名稱作為形容詞、以修改複數名詞。</p>
+</li>
+<li>
+<p>請勿使用商標詞彙的所有形式。您可以使用公司名稱（例如NetApp）的所有格式、在一般意義上使用這些名稱、而非商標術語。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="使用者介面">使用者介面</h3>
+<div class="paragraph">
+<p>請盡可能仰賴介面來引導使用者。</p>
+</div>
+<div class="sect3">
+<h4 id="一般準則">一般準則</h4>
+<div class="paragraph">
+<p>我們記錄UI的風格既簡單又簡單：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>假設使用者在讀取內容時使用介面。</p>
+</li>
+<li>
+<p>請仰賴介面來引導使用者：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>請勿逐步引導使用者完成精靈或畫面。只能從介面中指出不明顯的重要事項。</p>
+</li>
+<li>
+<p>請勿包含「按一下確定」或「按一下儲存」或「建立磁碟區」、或是執行工作的人所能看到的任何其他項目。</p>
+</li>
+<li>
+<p>假設成功。除非您預期大部分時間作業都會失敗、否則請勿記錄故障路徑。假設介面提供適當的指引。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>請勿使用「點選」。請務必使用「SELECT（選取）」、因為該字涵蓋滑鼠、觸控、鍵盤及任何其他選擇方式。</p>
+</li>
+<li>
+<p>將內容著重於處理客戶使用案例的工作流程、以及讓使用者在介面中找到適當位置來開始工作流程。</p>
+</li>
+<li>
+<p>務必記錄達成使用者目標的最佳方法之一。</p>
+</li>
+<li>
+<p>如果工作流程需要重大決策、請務必記錄決策規則。</p>
+</li>
+<li>
+<p>大部分時間、請使用大多數使用者所需的最低步驟數。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="命名ui元素">命名UI元素</h4>
+<div class="paragraph">
+<p>避免記錄到需要命名UI元素的精細度層級。請仰賴介面來引導使用者瞭解互動的細節。如果您必須取得該特定項目、請在元素上命名該標籤。例如、「選擇所需的 Volume 」或「選擇「使用現有的 Volume 」。 無需命名功能表或選項按鈕或核取方塊、只要使用標籤即可。</p>
+</div>
+<div class="paragraph">
+<p>如需使用者必須選取的圖示、請使用圖示的影像。請勿嘗試命名。此規則適用於箭頭、鉛筆、齒輪、kabob、漢堡、 等等。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="表示顯示的標籤">表示顯示的標籤</h4>
+<div class="paragraph">
+<p>識別標籤時、請遵循使用者介面所使用的拼字和大寫。如果標籤後面接著省略符號、請勿在命名物件時加入省略符號。鼓勵開發人員將標題樣式的大寫字用於使用者介面標籤、以便更輕鬆地撰寫這些標籤。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="使用螢幕擷取">使用螢幕擷取</h4>
+<div class="paragraph">
+<p>偶爾會出現螢幕擷取畫面（以下稱「螢幕擷取畫面」）、有助於使用者在工作流程期間啟動或變更介面時、確信介面位置正確。請勿使用螢幕擷取畫面來顯示要輸入的資料或要選擇的值。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="而與儘管相比">而（與「儘管」相比）</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用「時間」來指出某個時間發生的情況。</p>
+</li>
+<li>
+<p>使用「儘管」代表某項活動幾乎同時發生、或是在其他活動之後不久發生。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="工作流程">工作流程</h3>
+<div class="paragraph">
+<p>使用者閱讀我們的內容以達成特定目標。使用者想要找到所需的內容、達成目標、然後回到家中。我們的工作不是記錄產品或功能、而是記錄使用者目標。工作流程是協助使用者達成目標的最直接方法。</p>
+</div>
+<div class="paragraph">
+<p>工作流程是一系列步驟或子任務、說明如何達成使用者目標。工作流程的範圍是完整的目標。</p>
+</div>
+<div class="paragraph">
+<p>例如、建立磁碟區的步驟並不是工作流程、因為建立磁碟區本身並不是一個完整的目標。讓ESX伺服器可以使用儲存設備的步驟可能是工作流程。這些步驟不僅包括建立磁碟區、還包括匯出磁碟區、設定任何必要的權限、建立網路介面等。工作流程衍生自客戶使用案例。工作流程只顯示達成目標的最佳方式之一。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-tw/contribute/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-tw/contribute/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本頁</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用條款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隱私權政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/contribute/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/contribute/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/contribute/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/contribute/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-tw/contribute/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
