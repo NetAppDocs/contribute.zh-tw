@@ -92,12 +92,6 @@
   <block id="97aba9ddd85fa7db3ab0975897188664" category="inline-link">Merriam-Webster線上字典</block>
   <block id="a5c0a6970afaed0f8993e80f0367d714" category="list-text"><block ref="a5c0a6970afaed0f8993e80f0367d714" category="inline-link-rx"></block></block>
   <block id="33f6518588649a99a675cf3b6920a297" category="section-title">讚不已</block>
-  <block id="51081b1df080a1e17eccc89518ca8d20" category="paragraph">請使用下列標籤、分別識別主要內容流程的內容：</block>
-  <block id="10de4bc81f754b19b0d27246a0589c05" category="list-text">附註</block>
-  <block id="1eab470a6f707b92e15040773251a746" category="list-text">秘訣</block>
-  <block id="80de2a8faacb1711bb579e0ee9293a10" category="paragraph">請謹慎使用秘訣、因為我們的原則是永遠記錄預設的最佳實務資訊。如有必要、請使用TIP來包含最佳實務資訊、協助使用者輕鬆高效地使用產品或完成步驟或工作。</block>
-  <block id="18a970540d05e11964e25e6c04e72b53" category="list-text">注意</block>
-  <block id="acf7e64aba7071e147e493ba4b62b706" category="paragraph">請務必小心、告知使用者可能造成非致命或極度危險的人員傷害的情況或程序。</block>
   <block id="07ccfe360dce69b84595428e2ec1c1cc" category="section-title">此外</block>
   <block id="06957db97049767f064edfa829e41728" category="list-text">使用「同時」表示「額外」。</block>
   <block id="db9cdfa0cd758f90d8341ab3a5f4ff2b" category="section-title">和/或</block>
@@ -507,7 +501,6 @@
   <block id="955abac4e6854335582815280aaf36b4" category="paragraph">請遵循以下準則、為全球對象撰寫文章：</block>
   <block id="09fe3985f91385714baf11e8ccf88305" category="section-title">主動式語音（相對於被動式語音）</block>
   <block id="9f9f2635eab2378cac8b309f14376108" category="paragraph">請參閱 <block ref="0c285b154ac93c1540ae9e5281017dec" category="inline-xref-macro-rx"></block>。</block>
-  <block id="9a7a2c05bfc68a16b33bc5aeb9281db6" category="paragraph">請使用附註來取得必須與其他文字不同的重要資訊。避免使用者不需要的「注意事項」來瞭解工作或完成工作。</block>
   <block id="6647a0d8ddca3a32764030eaa8d33eaf" category="section-title">之後（而非「一次」）</block>
   <block id="dbb3ad88bf35c794d6f4916649c3a5f9" category="list-text">請使用「之後」來表示時間順序：「請在插入電腦後開啟電腦。」</block>
   <block id="c2173ab81c2076af318b1e50b4c92d38" category="list-text">使用「一次」只表示「一次」。</block>
@@ -574,4 +567,17 @@
   <block id="b82c2c6f8dedbeb3f2192242dfb244ce" category="section-title">同時（相對於「儘管」）</block>
   <block id="a8725be5130c5015f50f29026862358e" category="list-text">使用「同時」來指出時間內發生的情況。</block>
   <block id="1f9e771dea99b07dbcdbe2912dc1adb2" category="list-text">使用「儘管」來代表幾乎同時發生或在其他活動之後不久發生的活動。</block>
+  <block id="85d1422db3849226daed5a00eb7f27cf" category="section-title">縮寫詞和縮寫詞</block>
+  <block id="67e4f5c5f00a17a1b4ce3246a6964380" category="paragraph">請使用知名的縮寫詞和縮寫詞來熟悉、但請避免模糊不清的縮寫詞可能會對清楚度和可尋找性造成負面影響。有關縮寫詞和縮寫詞的其他約定，請參閱<block ref="129adddb06df0e4a944a90759a2b150f" category="inline-link-rx"></block>。</block>
+  <block id="bdfbb9ac9fe98f630d4d38fca776a609" category="paragraph">如果正確使用、 Admonitions 是一項強大的工具。他們可以提請注意重要資訊、提供實用秘訣、或警告使用者潛在危險。過度使用時、它們會失去影響、並可能導致使用者疲勞。以下是確保有效使用廣告的一些準則。</block>
+  <block id="d8ef07099960f55e1ae0b761837ff69a" category="paragraph">請使用下列標籤、將廣告與主要內容流程分開：</block>
+  <block id="6119ac1a35955a26ef75d563906cbe3d" category="list-text">附註使用附註來強調必須在其餘文字中脫穎而出的重要資訊。不過、請避免使用附註來提供「很好知道」的資訊、而這對於使用者瞭解或完成工作並不重要。附註的目的是提請讀者注意他們可能忽略的關鍵點。</block>
+  <block id="35c3c4208d908b007bea369dcf24fbd6" category="list-text">秘訣秘訣應該盡量謹慎使用、因為我們的原則是在預設情況下記錄最佳實務資訊。如有必要、請使用秘訣來強調最佳實務資訊、協助使用者更輕鬆、更有效率地使用產品或完成步驟或工作。秘訣應提供實用的建議或捷徑、以提升使用者體驗。</block>
+  <block id="f9157df517733068b87b36b76a31421e" category="list-text">注意：請謹慎警告使用者可能導致不良後果的情況或行動、包括人身傷害或設備損壞。請務必謹慎注意使用者必須避免的潛在危險、以免造成傷害或中斷。</block>
+  <block id="f47ad409538c3949a332704503a8123a" category="list-title">其他準則</block>
+  <block id="1468fb461f0c5feadd816a54f9094d1d" category="list-text">請僅使用支援的廣告。不支援任何其他類型的格式設定。</block>
+  <block id="16ef0cd6a13a91b99cf8dbc20e4c5c0a" category="list-text">避免過度使用廣告。過度使用可能會導致使用者跳過這些重要章節、因為他們認為這些章節是我們文件的「垃圾抽屜」。</block>
+  <block id="7defe98212d28fe26abbe5a9cad4ae26" category="list-text">根據經驗、每頁最多只能有 3 頁的廣告數量。</block>
+  <block id="61eaa50fbc86f3a53385a189d01e4277" category="list-text">在警訊中提供清楚且簡潔的資訊。此訊息應簡短且重點突出、讓使用者能夠快速瞭解所提供資訊的重要性。</block>
+  <block id="782ec3ae3054d5c9b55df66f9c637091" category="list-text">避免在表中出現 AsciDoc 廣告。如果需要將內容識別為附註、提示或注意事項、請使用附註：、提示：、 或注意：作為文字的內嵌導引。</block>
 </blocks>
