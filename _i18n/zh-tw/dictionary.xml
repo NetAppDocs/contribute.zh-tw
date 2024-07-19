@@ -129,7 +129,6 @@
   <block id="e6dbca21d4865b265ca2780205b19305" category="section-title">清單</block>
   <block id="f972727d0d863b69350eed11db8a67bd" category="paragraph">資訊清單通常比文字區塊更容易掃描和吸收。請考慮以清單形式呈現複雜資訊、以簡化複雜資訊的方法。以下是一些一般準則、但請運用您的判斷力：</block>
   <block id="652c96d419d82d48f063f9b3698a7ab6" category="list-text">請確定清單的原因清楚明確。介紹完整句子、含分號的句子片段或標題的清單。</block>
-  <block id="74a2e773d99d3b087aa91f4627a9a299" category="list-text">清單應包含兩到七個項目。一般而言、每個項目中的資訊越短、您可以新增的項目越多、但清單仍可掃描。</block>
   <block id="2338eb397c8abd6df9094da8edbe3fdf" category="list-text">清單項目應盡可能掃描。避免讓清單項目無法掃描的文字區塊。</block>
   <block id="abbf51d81adc3957b31167816443126c" category="list-text">清單項目應以大寫字母開頭、且清單項目應以等量方式平行。例如、使用名詞或動詞來啟動每個項目：</block>
   <block id="17de64fcb1f9b55eb373463234c451ae" category="list-text">如果所有清單項目都是完整的句子、請以句點結束。</block>
@@ -580,4 +579,6 @@
   <block id="7defe98212d28fe26abbe5a9cad4ae26" category="list-text">根據經驗、每頁最多只能有 3 頁的廣告數量。</block>
   <block id="61eaa50fbc86f3a53385a189d01e4277" category="list-text">在警訊中提供清楚且簡潔的資訊。此訊息應簡短且重點突出、讓使用者能夠快速瞭解所提供資訊的重要性。</block>
   <block id="782ec3ae3054d5c9b55df66f9c637091" category="list-text">避免在表中出現 AsciDoc 廣告。如果需要將內容識別為附註、提示或注意事項、請使用附註：、提示：、 或注意：作為文字的內嵌導引。</block>
+  <block id="2756ca63d216c97cd14d945694741c5a" category="list-text">使用清單中的清單時、請將結構限制在最多兩個深度層級、以保持清楚和易讀性。如果您發現自己需要更多層級、請考慮重新整理內容、讓使用者更容易瀏覽及瞭解內容。</block>
+  <block id="43803d6f6c9721992017b5a9a62d92ed" category="list-text">包括巢狀清單在內的任何清單都應該有兩到七個項目。一般而言、每個項目中的資訊越短、您可以新增的項目越多、但清單仍可掃描。如果清單有多個包含巢狀清單的項目、請考慮使用區段或區塊標題、將整個項目分割成更多的消耗性區塊。</block>
 </blocks>
