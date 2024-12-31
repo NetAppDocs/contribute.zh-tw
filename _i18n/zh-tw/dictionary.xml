@@ -569,9 +569,7 @@
   <block id="85d1422db3849226daed5a00eb7f27cf" category="section-title">縮寫詞和縮寫詞</block>
   <block id="67e4f5c5f00a17a1b4ce3246a6964380" category="paragraph">請使用知名的縮寫詞和縮寫詞來熟悉、但請避免模糊不清的縮寫詞可能會對清楚度和可尋找性造成負面影響。有關縮寫詞和縮寫詞的其他約定，請參閱<block ref="129adddb06df0e4a944a90759a2b150f" category="inline-link-rx"></block>。</block>
   <block id="bdfbb9ac9fe98f630d4d38fca776a609" category="paragraph">如果正確使用、 Admonitions 是一項強大的工具。他們可以提請注意重要資訊、提供實用秘訣、或警告使用者潛在危險。過度使用時、它們會失去影響、並可能導致使用者疲勞。以下是確保有效使用廣告的一些準則。</block>
-  <block id="d8ef07099960f55e1ae0b761837ff69a" category="paragraph">請使用下列標籤、將廣告與主要內容流程分開：</block>
   <block id="6119ac1a35955a26ef75d563906cbe3d" category="list-text">附註使用附註來強調必須在其餘文字中脫穎而出的重要資訊。不過、請避免使用附註來提供「很好知道」的資訊、而這對於使用者瞭解或完成工作並不重要。附註的目的是提請讀者注意他們可能忽略的關鍵點。</block>
-  <block id="35c3c4208d908b007bea369dcf24fbd6" category="list-text">秘訣秘訣應該盡量謹慎使用、因為我們的原則是在預設情況下記錄最佳實務資訊。如有必要、請使用秘訣來強調最佳實務資訊、協助使用者更輕鬆、更有效率地使用產品或完成步驟或工作。秘訣應提供實用的建議或捷徑、以提升使用者體驗。</block>
   <block id="f9157df517733068b87b36b76a31421e" category="list-text">注意：請謹慎警告使用者可能導致不良後果的情況或行動、包括人身傷害或設備損壞。請務必謹慎注意使用者必須避免的潛在危險、以免造成傷害或中斷。</block>
   <block id="f47ad409538c3949a332704503a8123a" category="list-title">其他準則</block>
   <block id="1468fb461f0c5feadd816a54f9094d1d" category="list-text">請僅使用支援的廣告。不支援任何其他類型的格式設定。</block>
@@ -581,8 +579,16 @@
   <block id="782ec3ae3054d5c9b55df66f9c637091" category="list-text">避免在表中出現 AsciDoc 廣告。如果需要將內容識別為附註、提示或注意事項、請使用附註：、提示：、 或注意：作為文字的內嵌導引。</block>
   <block id="2756ca63d216c97cd14d945694741c5a" category="list-text">使用清單中的清單時、請將結構限制在最多兩個深度層級、以保持清楚和易讀性。如果您發現自己需要更多層級、請考慮重新整理內容、讓使用者更容易瀏覽及瞭解內容。</block>
   <block id="43803d6f6c9721992017b5a9a62d92ed" category="list-text">包括巢狀清單在內的任何清單都應該有兩到七個項目。一般而言、每個項目中的資訊越短、您可以新增的項目越多、但清單仍可掃描。如果清單有多個包含巢狀清單的項目、請考慮使用區段或區塊標題、將整個項目分割成更多的消耗性區塊。</block>
-  <block id="9180a138d2588804da4de0d6e61ec2bb" category="list-text">最佳實務做法是使用最佳實務做法來強調完成工作或使用產品的最佳方式。這些不只是建議，更是經過專家或產業標準驗證的策略。</block>
-  <block id="5b9354127be6b96d635fb856a47f31f1" category="list-text">* 最佳實務做法是什麼？ *這是一項可據以行動的特定工作策略，提供明確的效益，並以可靠來源為後盾。</block>
-  <block id="ef8528c9eb4d7dfdd5a91cbbc1bd2643" category="list-text">* 我何時可以使用？ *您可以針對所有內容類型和所有對象使用最佳實務做法。像秘訣一樣，請謹慎使用，以維持其重要性。</block>
-  <block id="2354ed6260607168c3cdc6927a1378ef" category="list-text">* 如何設定格式？ *以一致且方便使用的格式呈現最佳實務做法。這可能是項目符號清單，編號清單或段落，視內容而定。</block>
+  <block id="0d0db7fa358a7121846564bec41d0208" category="paragraph-title">標準廣告</block>
+  <block id="67b450f0b70d67f8a1f6c7ab673c0dc1" category="paragraph">三個標準的廣告使用自訂標籤。標籤為附註、提示和注意事項。這三個標準的字母格式都是從正常文字中清楚地設定，而且標籤一律以大寫形式寫入 AsciDoc 來源。</block>
+  <block id="e0281e48cc230df0d17e32bdeadafa88" category="list-text">提示使用提示提供實用的建議或捷徑，以提升使用者體驗。例如，秘訣可協助使用者更輕鬆，更有效率地完成步驟或工作。如果我們的政策是記錄預設完成工作的最佳方式，則應謹慎使用秘訣。</block>
+  <block id="bd59449e44ac069f00cf02bf41b98a4d" category="paragraph-title">最佳實務建議</block>
+  <block id="45a55d2a6dc01617ff2813f1df068959" category="paragraph">最佳實務做法是不要使用自訂的「警示標籤」，而是可作為獨立格式化慣例使用。使用最佳實務做法來強調完成工作或使用產品的最佳方式。這些不只是建議，更是經過專家或產業標準驗證的策略。</block>
+  <block id="eb197ec8464405e0fdc0776ae747774e" category="list-text">* 最佳實務做法是什麼？ *</block>
+  <block id="c38d161090999cc2cea467935210cce0" category="paragraph">這是一項可據以行動的特定工作策略，提供明確的效益，並以可靠來源為後盾。</block>
+  <block id="9d4ddd8adc1dd6c331e4d319cc4e6a3f" category="list-text">* 我何時可以使用最佳實務做法？ *</block>
+  <block id="455e1a544044086a420ba47a5d001280" category="paragraph">您可以針對所有內容類型和所有對象使用最佳實務做法。像秘訣一樣，請謹慎使用，以維持其重要性。</block>
+  <block id="36744f1e0c64e2f519e59cccdba068a1" category="list-text">* 如何設定最佳實務做法的格式？ *</block>
+  <block id="c326700655ab8fca23fa2162a1adaa37" category="paragraph">若要使用最佳實務格式，請套用句子樣式的大寫字元，以粗體字表示最佳實務做法，然後加上冒號和空格。</block>
+  <block id="0c4265fbbfc82a92746e47643f565c1c" category="paragraph">以一致且方便使用的格式呈現最佳實務做法。這可能是項目符號清單，編號清單或段落，視內容而定。例如， * 最佳實務 * ：在將組態變更套用至正式作業環境之前，請務必先在暫存環境中測試組態變更。</block>
 </blocks>
