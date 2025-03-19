@@ -1,8 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
+keywords: contribute, GitHub, docs, documentation, NetApp 
+summary: 協助我們改善，修正及建議 NetApp 產品文件。 
 ---
-= 參與GitHub的NetApp技術內容
+= 在 GitHub 中提供 NetApp 產品文件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -1,6 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: style.html 
+keywords: style, netapp docs style, netapp docs writing style, voice 
+summary: 我們的風格是對話式且具同理心的、但我們仍保持專業水準並達到目標。 
 ---
 = NetApp文件樣式指南
 :hardbreaks:
@@ -455,6 +457,12 @@ NetApp相信其產品文件不應包含任何具差別的專屬語言。我們�
 === 和/或
 
 如果有的話、請選擇更精確的詞彙。如果兩個詞彙都不比另一個詞彙更精確、請使用「和 / 或」。
+
+
+
+=== API
+
+應用程式設計介面（ API ）是指可存取特定產品或服務的單一介面。在大型產品 API 中，使用術語 _API_ 來參照與資源類型或元件相關的每組端點。當提及多個不同的介面時，請使用術語 _API_ 。
 
 
 

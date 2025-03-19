@@ -1,6 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: ai-policy.html 
+keywords: AI, artificial intelligence, generated content, NetApp, technical documentation 
+summary: NetApp 的政策是禁止發佈未經人工智慧驗證和驗證的 AI 產生內容。 
 ---
 = 禁止在NetApp技術文件中使用AI產生內容的原則
 :hardbreaks:

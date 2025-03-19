@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="927796bbaa454c7de262b6c5f63a9498" category="doc">參與GitHub的NetApp技術內容</block>
   <block id="5b1673a33a3bc92200f7685076cfb382" category="paragraph">NetApp產品與服務的文件為開放原始碼。如此一來、您就能透過改善、修正及建議、對內容做出貢獻。您只需要一個GitHub帳戶和一個小計畫。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">總覽</block>
   <block id="f1eb983643f08d3d76ff0c9dcdd99f9b" category="paragraph">您可以使用下列選項來貢獻我們的文件：</block>
@@ -591,4 +590,11 @@
   <block id="36744f1e0c64e2f519e59cccdba068a1" category="list-text">* 如何設定最佳實務做法的格式？ *</block>
   <block id="c326700655ab8fca23fa2162a1adaa37" category="paragraph">若要使用最佳實務格式，請套用句子樣式的大寫字元，以粗體字表示最佳實務做法，然後加上冒號和空格。</block>
   <block id="0c4265fbbfc82a92746e47643f565c1c" category="paragraph">以一致且方便使用的格式呈現最佳實務做法。這可能是項目符號清單，編號清單或段落，視內容而定。例如， * 最佳實務 * ：在將組態變更套用至正式作業環境之前，請務必先在暫存環境中測試組態變更。</block>
+  <block id="264e061aa850fbdff533ac273d529d09" category="summary">NetApp 的政策是禁止發佈未經人工智慧驗證和驗證的 AI 產生內容。</block>
+  <block id="d0482f09772a334a3c8f4646a75d2ae4" category="summary">瞭解 AsciDoc 語法以提供 NetApp 文件。</block>
+  <block id="a383d20edf0eed3b667f267bc4178aa1" category="summary">協助我們改善，修正及建議 NetApp 產品文件。</block>
+  <block id="810127b15467af054cfb3174cf01513c" category="doc">在 GitHub 中提供 NetApp 產品文件</block>
+  <block id="5fc1774ab777f265a9e9e8436a4165bc" category="summary">我們的風格是對話式且具同理心的、但我們仍保持專業水準並達到目標。</block>
+  <block id="db974238714ca8de634a7ce1d083a14f" category="section-title">API</block>
+  <block id="e823e37af27041a01f75462ee35c0848" category="paragraph">應用程式設計介面（ API ）是指可存取特定產品或服務的單一介面。在大型產品 API 中，使用術語 _API_ 來參照與資源類型或元件相關的每組端點。當提及多個不同的介面時，請使用術語 _API_ 。</block>
 </blocks>
